@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>my flask hello app</title>
+	<style>
+		*{
+			font-size: 30px;
+
+		}
+	</style>
+</head>
+<body>
+<input id="age" type="text" placeholder="age"/></br>
+<input id="gender" type="text" placeholder="gender"/></br>
+<input id="cp" type="text" placeholder="cp"/></br>
+<input id="restbp" type="text" placeholder="restbp"/></br>
+<input id="chol" type="text" placeholder="chol"/></br>
+<input id="fbs" type="text" placeholder="fbs"/></br>
+<input id="restecg" type="text" placeholder="restecg"/></br>
+<input id="thalach" type="text" placeholder="thalach"/></br>
+<input id="exang" type="text" placeholder="exang" /></br>
+<input id="oldpeak" type="text"placeholder="oldpeak"/></br>
+<input id="slope" type="text"placeholder="slope"/></br>
+<input id="ca" type="text" placeholder="ca"/></br>
+<input id="thal" type="text" placeholder="thal"/></br>
+<button id="name-button">predict</button>
+<p id="greeting"></p>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script >
+	$("#name-button").click(function(event){
+		let message={
+			
+age:$("#age").val(),
+gender:$("#gender").val(),
+cp:$("#cp").val(),
+restbp:$("#restbp").val(),
+chol:$("#chol").val(),
+fbs:$("#fbs").val(),
+restecg:$("#restecg").val(),
+thalach:$("#thalach").val(),
+exang:$("#exang").val(),
+oldpeak:$("#oldpeak").val(),
+slope:$("#slope").val(),
+ca:$("#ca").val()	,
+thal:$("#thal").val()	
+			} // message bracket end
+
+				$.post("http://localhost:5000/ahmed",JSON.stringify(message),function(response){
+		$("#greeting").text(response.greeting);
+		console.log(response);
+	});
+
+	});// onclick end
+</script>
+</body>
+</html>
