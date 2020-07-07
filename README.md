@@ -7,7 +7,7 @@ Classification Trees are an exceptionally useful machine learning method when yo
 
 In this project I will...
 
-Importing the Data From a File Missing Data
+Import the Data From a File Missing Data
 
 Identifying Missing Data Dealing with Missing Data Formatting the Data for Decision Trees Split data into Dependent and Independent Variables One-Hot-Encoding Building a Preliminary Classification Tree Using Cost Complexity Pruning Visualize Alpha Cross Validation For Finding the Best Alpha Building, Drawing, Interpreting and Evaluating the Final Classification Tree
 
