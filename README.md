@@ -1,5 +1,5 @@
 # PredictHeartProblem
-This project used decision trees to predict whether a patient has a heart problem
+This project uses decision trees to predict whether a patient has a heart problem
 
 In this project I will use scikit-learn to build Classification Tree , which uses continuous and categorical data from the UCI Machine Learning Repository to predict whether or not a patient has heart disease:
 
