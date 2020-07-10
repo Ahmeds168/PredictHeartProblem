@@ -1,5 +1,13 @@
 In this project I will use scikit-learn  to build Classification Tree , which uses continuous and categorical data from the UCI Machine Learning Repository to predict whether or not a patient has heart disease:
 
+
+This project has been deployed to: https://predictheartproblem.herokuapp.com/
+so running the project involves only inserting this url in the browser and after the page opens  there are text boxes to insert feature values and then click predict button. as the result classifier will print whether patient has heat disease or not.
+
+The project is available on github on url: https://github.com/Ahmeds168/PredictHeartProblem
+
+
+
 Classification Trees are an exceptionally useful machine learning method when you need to to know how the decisions are being made. For example, if you have to justify the predictions to your boss, Classification Trees are a good method because each step in the decision making process is easy to understand.
 
 In this project I will...
